@@ -117,7 +117,7 @@
 \begin{document}
 
 \newcommand{\getGameName}{Human and Dog}
-\title{\getGameName\ : Explore the Game Design of Unequal Communication Mechanic}
+\title{\getGameName\ : An Experiment on Unequal Communication Mechanic}
 
 \numberofauthors{3}
 \author{%
@@ -138,7 +138,12 @@
 \maketitle
 
 \begin{abstract}
-  Inequality of communication capabilities, such as proficiency in a certain language, may cause an awkward experience in real life. However, in terms of gaming, this can make games more challenging and interesting. \textit{Charades}\cite{Charades} is a good example, where one player tries to express a word via body language, and the other tries to guess it. Besides, cooperative digital games with equal communication capabilities can be widely seen but few has adopted unequal setting. Therefore, we have designed Human and Dog, in which 2 players, a human and a dog, communicate to solve a series of puzzles with unequal communication capabilities. Game design was explored through the information type. Ultimately, we conducted an experiment to evaluate our game. From the collected data, several interesting communication patterns were discovered and we addressed some game design issues for future reference.
+  Inequality of communication capabilities like proficiency in a certain language may cause an awkward experience in real life. However, in terms of gaming, unequal communication mechanic can make games more challenging and interesting. \textit{Charades}\cite{Charades}, where one player tries to express a word via body language while the others try to guess it, is a good example of such cases. Hence, different from most cooperative digital games, which equal communication mechanic have been widely used, we experiment with this unequal communication mechanic. We have designed \getGameName, in which 2 players, a human and a dog, communicate to solve a series of puzzles with unequal communication capabilities.
+%   Game design was explored through the information type.
+%   "information type" too abstract
+  Ultimately, we conducted an experiment to evaluate our game. 
+%   From the collected data, several interesting communication patterns were discovered and we addressed some game design issues for future reference.
+From our observation, several interesting communication patterns were discovered and we addressed some game design issues for future reference.
 \end{abstract}
 
 \category{K.8.0.}{General: Games}{}{}
@@ -146,17 +151,29 @@
 \keywords{\plainkeywords}
 
 \section{Introduction}
-Cooperative design has been an integral part of many games, and one of the core mechanics is communication. Games with equal communication patterns can be widely seen, most of which adopt voice or text chat. Others employ body language like \textit{Mute Robot}\cite{MuteRobot} and \textit{Way}\cite{Way} or pre-defined symbols like \textit{Portal 2}\cite{Portal2}. On the contrary, cases where unequal communications happen seldom appears in the scene of digital game design, while such situation regularly occurs in reality when people trying to communicate with deaf or mute people but knowing little about sign language, or even trying to communicate with pets. Inspired by these real-world situations, we designed \getGameName, featuring two protagonists: one being a human, and the other being a dog.  Each of them has asymmetric advantages that can be utilized to solve certain tasks and communicates with each other through unequal communicative capabilities. From this communication mechanic we addressed several factors regarding game challenges and communication patterns.
-This paper is structured as follow: we summarize the research topics on communication patterns, mechanics and how challenge affects players. Next, we introduce the game design, including the game mechanics, the description of the four levels and the theme of this game. Finally, we talk about the game experiment used to evaluate our game, present the results and discuss the findings.
+Cooperative design has been an integral part of many games, and one of the core mechanics is communication. Games with equal communication patterns can be widely seen, most of which adopt voice or text chat.
+Others employ body language like \textit{Mute Robot}\cite{MuteRobot} and \textit{Way}\cite{Way} or pre-defined symbols like \textit{Portal 2}\cite{Portal2}.
+On the contrary, cases where unequal communications happen seldom appear in the scenes of digital game design, while such situation regularly occurs in reality when people trying to communicate with deaf or mute people but knowing little about sign language, or even trying to communicate with pets.
+Inspired by these real-world situations, we designed \getGameName, featuring two protagonists: one being a human, and the other being a dog. 
+Each of them has asymmetric advantages that can be utilized to solve certain tasks and communicates with each other through unequal communication capabilities.
+From this communication mechanic we addressed several factors regarding game challenges and communication patterns.
+This paper is structured as follows: we summarize the research topics on communication patterns, mechanics, and how challenges affect players.
+Next, we introduce the game design, including the game mechanics, the game design patterns and the description of the four levels.
+Finally, we describe the game experiment used to evaluate our game, present the results, and discuss the findings.
+
 \section{Related Work}
 %Challenge second version
-Challenge is considered to be one of the key components of game-play and has been an important research topic. Cox et al.studied how the level of physical and cognitive challenge can affect a player's experience of immersion and concluded that cognitive challenge may have greater effect on immersion \cite{Chall1}. Iacovides et al. investigated how players actually overcome challenges and identified some player strategies \cite{Chall2}. Both Cox and Iacovides quoted the Flow theory\cite{PsyFlow}, which suggests that flow is achieved as a result of an appropriate balance between the perceived level of challenge and the person's skills.
+A challenge is considered to be one of the key components of game-play and has been an important research topic.
+Cox et al. studied how the level of physical and cognitive challenge can affect a player's experience of immersion and concluded that a cognitive challenge may have greater effect on immersion \cite{Chall1}.
+Iacovides et al. investigated how players actually overcome challenges and identified some player strategies \cite{Chall2}.
+Both Cox and Iacovides quoted the Flow theory \cite{PsyFlow}, which suggests that flow is achieved as a result of an appropriate balance between the perceived level of challenges and the person's skills.
 
 %Pattern exploration
-Prior works have explored and analyzed cooperative game design patterns. Zagal, Rick and Hsi explored cooperative patterns within board games and yielded some observations that game designers might consider useful for designing collaborative game \cite{CG1}, and it also presented an ontology with a view to analyzing game play \cite{CG3}. 
+Prior works have explored and analyzed cooperative game design patterns. Hsi et al. explored cooperative patterns within board games and yielded some observations that game designers might consider useful for designing collaborative game \cite{CG1}, and it also presented an ontology with a view to analyzing game play \cite{CG3}. 
 Bjork and Holopainen presented a large quantity of game design patterns \cite{CG2}, including cooperative and social interaction patterns.
-Rocha et al. presented a framework of several cooperative game design patterns and analyzed the actual impact of using these game mechanics to design a cooperative video game \cite{CG4}, which is later extended by
-El-Nasr et al., proposing Cooperative Performance Metrics (CPMs) to evaluate game experiences \cite{CPMs}.Also, Toups et al. analyzed the communication mechanics of forty cooperative games using grounded theory \cite{CG5}. Many communication patterns have been addressed in these past works, the unequal communication mechanic still yields some new and interesting patterns.
+Rocha et al. presented a framework of several cooperative game design patterns and analyzed the actual impact of using these game mechanics to design a cooperative video game \cite{CG4}, which is later extended by El-Nasr et al. who proposed Cooperative Performance Metrics (CPMs) to evaluate game experiences \cite{CPMs}.
+Also, Toups et al. analyzed the communication mechanics of 40 cooperative games using grounded theory \cite{CG5}.
+Many communication patterns have been addressed in these past works, the unequal communication mechanic still yields some new and interesting patterns.
 
 \section{Game Design}
 %introduce the communication mechanics
@@ -170,87 +187,191 @@ El-Nasr et al., proposing Cooperative Performance Metrics (CPMs) to evaluate gam
 %second puzzle: communication for discrete spacial description (UDLR)
 %third puzzle: communication for continuous spacial description in a 3D space
 %fourth puzzle: communication for information, with aid of external tools (poker and periodic table)
-Our game is a cooperative puzzle-solving game developed with Unity \cite{Unity}. The game involves two players at two different locations connected via the Internet. To reinforce the interaction of two players, we adopted two cooperative game design patterns, Complementarity and Information Asymmetry. Complementarity, which was also identified in Rocha's et al work \cite{CG4}, implies that players play difference roles to complement each others' activities within the game. Information Asymmetry indicates that different players would acquire and perceive different information during game-play. Furthermore, the most important mechanic is the unequal communication. we experiment this mechanic with two characters, a human and a dog. The details are provided below:
+Our game is a cooperative puzzle-solving game developed with Unity3D \cite{Unity}. The game involves two players at two different locations connected via Internet.
+To enhance the interaction of two players, we adopted two cooperative game design patterns, \textit{Complementarity} and \textit{Information Asymmetry}.
+% \textit{Complementarity}, which was also identified in Rocha's et al work \cite{CG4}, implies that players play difference roles to complement each others' activities within the game. 
+\textit{Complementarity}, defined by Rocha et al. \cite{CG4}, implies that players play different roles to complement each others' activities within the game. 
+\textit{Information Asymmetry} indicates that different players would acquire and perceive different information during game-play.
+Furthermore, the most important mechanic of our game is the unequal communication.
+We experiment this mechanic with two player characters, a human and a dog character described below:
+
 \begin{itemize}
 \item \textbf{Human Character}\newline
-The human is able to operate intricate moves such as tapping a keypad or typing a computer. Also, the character can use verbal language to communicate with the other player.
+The human is able to operate intricate moves such as tapping a keypad or typing a computer.
+Also, the character can use verbal language to communicate with the other player.
 \item \textbf{Dog Character}\newline
-The dog has a different range of sensing capabilities regarding olfaction and vision, and thus certain clues can only be detected by this character. Also, it is capable of passing through narrow areas due to its smaller figure. In the setting of our game, the dog was transformed from a human. Although it can understand what the human is saying, its communication capabilities are limited to 4 different kinds of vocal patterns (whine, howl, bark and anger.)
+The dog has a different range of sensing capabilities regarding olfaction and vision, and thus certain clues can only be detected by this character.
+Also, it is capable of passing through narrow areas due to its smaller figure.
+In the setting of our game, the dog was transformed from a human.
+Although it can understand what the human is saying, its communication capabilities are limited to 4 different kinds of vocal patterns (whine, howl, bark, and anger.)
 \end{itemize}
+
 \subsection{Level Design}
+
 In terms of level design, our goal is to explore the game design with the information type and examine how players exchange different types of information. The description of these levels is outlined below:
+
 \begin{enumerate}
+
 \item \textbf{Symbolic information problem}\newline
-The first puzzle is inputting the correct code in a keypad on a wall. The human needs to figure out the permutation of the digits according to the clue on nearby desk and the dog will find out the digits which constitute the code by sniffing the dead scientist and then the keypad.(\autoref{fig:puzzle1})
+% The first puzzle is inputting the correct code in a keypad on a wall.
+The first puzzle is to guess the password of a door by pressing numbers of a keypad on a wall.
+% The human needs to figure out the permutation of the digits according to the clue on nearby desk and the dog will find out the digits which constitute the code by sniffing the dead scientist and then the keypad.
+The human needs to figure out the digit sequence according to the clue on a nearby desk, and the dog looks for the digits which constitute the code by sniffing the dead scientist and then the keypad. (\autoref{fig:keypad_and_name} {\textbf{(a)} and {\textbf{(b)})
+
 \item \textbf{Discrete spatial information problem}\newline
-The second puzzle is a modified 8-puzzle\cite{8puzzle}, where the picture on it is unseen by the human, while the dog can find the clue and see the picture of the puzzle on the opposite side by passing through a narrow aisle. (\autoref{fig:8puzzle} and \autoref{fig:puzzle2_view})
+% The second puzzle is a modified 8-puzzle \cite{8puzzle}, where the picture on it is unseen by the human, while the dog can find the clue and see the picture of the puzzle on the opposite side by passing through a narrow aisle. (\autoref{fig:8puzzle} and \autoref{fig:puzzle2_view})
+There are two parts of the second puzzle.
+The first part is to look for a narrow secret passage way that only fits the size of a dog.
+After the dog passes through the passage, both the human and the dog must communicate from different rooms to solve the second part of the puzzle. (\autoref{fig:puzzle2_all} {\textbf{(c)})
+The second part is a modified 8-puzzle where the side with no picture faces the human and the side with a picture faces the dog, and therefore the dog instructs the human to move the tiles.  (\autoref{fig:puzzle2_all} {\textbf{(a)} and {\textbf{(b)})
+%May need to explain why the human knew the existence of the mushrooms.
 \item \textbf{Continuous spatial information problem}\newline
-The third puzzle requires two players to destroy three mushrooms located in the room. These mushrooms are invisible to the human, but not the dog. However, the only way to destroy them is by shooting bullets at them, which can be done only by the human.(\autoref{fig:puzzle3})
+% The third puzzle requires two players to destroy three mushrooms located in the room. These mushrooms are invisible to the human, but not the dog. However, the only way to destroy them is by shooting bullets at them, which can be done only by the human. 
+The third puzzle is a first person shooting game for the human with the objective of mushroom destruction.
+However, there are 3 genetically-modified mushrooms only visible to the dog but invisible to the human. (\autoref{fig:auxiliaryItems_and_mushrooms} {\textbf{(b)} and {\textbf{(c)})
+The dog must show the locations of the mushrooms for the human to shoot at in order to complete the puzzle.
+
 \item \textbf{Auxiliary items represented information problem}\newline
-In the last puzzle, players are provided with auxiliary items: a set of poker cards and a periodic table.(\autoref{fig:auxiliary_items}) A name written in English alphabets can only be discovered by the dog nearby a dead scientist (\autoref{fig:puzzle4_name}) and is the password for accessing to a computer which can only be operated by the human. 
+In the last puzzle, players are provided with auxiliary items: a set of poker cards and a periodic table.(\autoref{fig:auxiliaryItems_and_mushrooms} {\textbf{(a)}) A name written in English alphabets can only be discovered by the dog nearby a dead scientist (\autoref{fig:keypad_and_name} {\textbf{(c)}) and is the password for accessing a computer which can only be operated by the human. 
 \end{enumerate}
 
+% \begin{figure}[H]
+%     \minipage[t]{0.5\linewidth}
+%         \centering
+%         \includegraphics[width=\linewidth]{images/8puzzle.png}
+%         \caption{The modified 8-puzzle:  \textbf{(a)} the human's view \textbf{(b)}  the dog's view}
+%         \label{fig:8puzzle}
+%     \endminipage
+%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+%       %(or a blank line to force the minipage onto a new line)
+%     \minipage[t]{0.5\linewidth}
+%         \centering
+%         \includegraphics[width=\linewidth]{images/puzzle2_view.png}
+%         \caption{the view of second puzzle and the narrow aisle}
+%         \label{fig:puzzle2_view}
+%     \endminipage
+%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+%     %(or a blank line to force the minipage onto a new line)
+% \end{figure}
+
 \begin{figure}[H]
-    \minipage[t]{0.5\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{images/puzzle1.png}
-        \caption{The keypad puzzle: \textbf{(a)}  the dog's view \textbf{(b)} the human's view}
-        \label{fig:puzzle1}
-    \endminipage
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the minipage onto a new line)
-    \minipage[t]{0.5\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{images/puzzle4_name.png}
-        \caption{The name that can only be perceived by dog.}
-        \label{fig:puzzle4_name}
-    \endminipage
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-    %(or a blank line to force the minipage onto a new line)
+\centering
+\includegraphics[width=0.7\linewidth]{images/puzzle1_and_4.png}
+\caption{\textbf{(a)}: The keypad from dog's view. \textbf{(b)}: The clue on the nearby desk. \textbf{(c)}: The name that can only be seen by dog.}
+\label{fig:keypad_and_name}
 \end{figure}
+
 \begin{figure}[H]
-    \minipage[t]{0.5\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{images/8puzzle.png}
-        \caption{The modified 8-puzzle:  \textbf{(a)} the human's view \textbf{(b)}  the dog's view}
-        \label{fig:8puzzle}
-    \endminipage
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the minipage onto a new line)
-    \minipage[t]{0.5\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{images/puzzle2_view.png}
-        \caption{the view of second puzzle and the narrow aisle}
-        \label{fig:puzzle2_view}
-    \endminipage
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-    %(or a blank line to force the minipage onto a new line)
+\centering
+\includegraphics[width=0.9\linewidth]{images/puzzle2_all.png}
+\caption{\textbf{(a)} \& \textbf{(b)}: The modified 8-puzzle seen on the side of human and dog, respectively. \textbf{(c)}: The passage that only the dog can pass through.}
+\label{fig:puzzle2_all}
 \end{figure}
+
 \begin{figure}[H]
-    \minipage[t]{0.5\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{images/auxiliary_items.png}
-        \caption{The auxiliary items: poker cards and periodic table.}
-        \label{fig:auxiliary_items}
-    \endminipage
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the minipage onto a new line)
-    \minipage[t]{0.5\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{images/puzzle3_2.png}
-        \caption{The mushroom: \textbf{(a)}  the dog's view \textbf{(b)} the human's view}
-        \label{fig:puzzle3}
-    \endminipage
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-    %(or a blank line to force the minipage onto a new line)
+\centering
+\includegraphics[width=0.9\linewidth]{images/puzzle3_and_4.png}
+\caption{\textbf{(a)} The auxiliary items: poker cards and periodic table. \textbf{(b)} \& \textbf{(c)}: The mushroom in the dog's and the human's view respectively.}
+\label{fig:auxiliaryItems_and_mushrooms}
 \end{figure}
+
+% \begin{figure}[H]
+%     \minipage[t]{0.5\linewidth}
+%         \centering
+%         \includegraphics[width=\linewidth]{images/auxiliary_items.png}
+%         \caption{The auxiliary items: poker cards and periodic table.}
+%         \label{fig:auxiliary_items}
+%     \endminipage
+%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+%       %(or a blank line to force the minipage onto a new line)
+%     \minipage[t]{0.5\linewidth}
+%         \centering
+%         \includegraphics[width=\linewidth]{images/puzzle3_2.png}
+%         \caption{The mushroom: \textbf{(a)}  the dog's view \textbf{(b)} the human's view}
+%         \label{fig:puzzle3}
+%     \endminipage
+%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+%     %(or a blank line to force the minipage onto a new line)
+% \end{figure}
 
 \section{Study Design}
-
-
+% In order to understand the behaviours and experience of players, 16 participants were recruited (F=5;M=11;Age=20 to 27). Before they started playing, we told them the input and the rules of the game. The characters were randomly assigned and the duration of game-play was around 40 to 50 minutes. After they finished the game-play, we let them do a brief questionnaire about their gaming habits, a 5 points Likert-scale questionnaire to collect their experience, such as difficulty and enjoyment, during the game-play and did a short interviewed with them to understand their strategies, communication protocols and behaviours in some special situations.
+In order to understand user behaviours and the gaming experience of our game design, 16 participants were recruited (F=5;M=11;Age=20 to 27).
+Before they started, operations for both the human and dog player character and the rules of the game were introduced.
+The human and dog characters were randomly assigned and the duration of game-play was around 40 to 50 minutes.
+After the game-play, the participants filled up a brief questionnaire about their gaming habits and a 5-point Likert-scale questionnaire to collect their game-play experience of \getGameName{} such as difficulty and enjoyment. 
+We also conducted a short interview with them to understand their strategies, communication protocols, and behaviours in some certain situations.
 \section{Result}
+We received overall positive feedbacks from the participants. The average enjoyment of each puzzles is all rated high (above 3.75 out of 5.0). As for the difficulty aspect, players as human find the last two levels more difficult specifically on communicating with the other player, but the second puzzle holds the most difficult one in terms of overall difficulty. Players as dogs, however, finds communicating most difficult in the second puzzle, and the overall difficulty result shows that the last puzzle are considered the most difficult.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\linewidth]{images/enjoyment.png}
+\includegraphics[width=0.9\linewidth]{images/communication_difficulty.png}
+\includegraphics[width=0.9\linewidth]{images/overall_difficulty.png}
+\end{figure}
 \section{Discussion}
+\subsection{Communication Patterns}
+After observing the game-play of sixteen participants and interviewing with them, we identified various communication patterns and outlines them below:
+\begin{enumerate}
+\item \textbf{Mapping dog vocal patterns to certain meanings}\newline
+% Usually at the beginning of the game, players would settle down the mapping of yes and no, either to the number of voice, such as "if it's yes then bark once; otherwise, bark twice.", or to the feeling of an voice by instinct, such as "if it's yes then bark; otherwise, whine or use the angry voice." In the first puzzle, some of the human players would map the digits in the way of "The occurrence of barking represent the next digit." or ask a yes-no question about whether the next digit is a certain number. In the second puzzle, most of the human players would mapping the next direction to the number of voice or the feeling of an voice. A few would map the position of a tile to the number of voice.
+Usually at the beginning of the game, players would settle down the mapping of positive and negative.
+Some distinguish positive and negative by the number of voice or by the 4 vocal patterns of the dog.
+For example, ``If the answer is yes, then bark once; otherwise, bark twice.''
+For another example, ``If it's yes, then bark; otherwise, whine or use the angry voice.''
+In the first puzzle, some of the human players would map the digits by the number of occurrence of barking to represent a digit or ask a yes-no question about whether the next digit is a certain number.
+In the second puzzle, most of the human players would map the next direction to the number of dog voice or the feeling of an voice.
+A few would map the position of a tile to the number of voice.
+In the third puzzle, the human players may iteratively correct their aiming direction by asking ``Should I aim upward,downward,leftward or rightward'' and shoot until they have shot a mushroom.
+
+% \item \textbf{From macro to micro}\newline
+\item \textbf{Narrowing Down}\newline
+% third puzzle : on the wall or on the floor
+% how many alphabets are in the name?
+% Is the elements in the first group?
+% We also observed that some of the human players would ask some questions to narrow the information space. For example, in third puzzle, the human players would ask "Is the mushroom on the ground or on the wall?". In the last puzzle, the human players would ask how many alphabets are in the name first and when they were communicating via periodic table, some of the human players would ask "Is the  indicated element in the first group?".
+We also observed that some of the human players would ask some questions to narrow down possibilities.
+For example, in the third puzzle, the human players would ask ``Is the mushroom on the ground or on the wall?''.
+In the last puzzle, the human players would ask how many alphabets are in the name first and when they were communicating via periodic table, some of the human players would ask ``Is the indicated element in the first group?''.
+
+\item \textbf{Taking turns in the leading position}\newline
+% third puzzle : lead the way
+% last puzzle : dog would actively pick the cards and human would guess the mapping rule defined by dog.
+% drawing attention
+% Most of the time, the human players would take the leading position. However, the dog may discover the key information to the puzzle first and it would try to draw the attention of the human with its sound. For instance, in the third puzzle, the human couldn't know the locations of the mushrooms so they would let the dog lead the way. In the last puzzle, some of the dog players would actively pick the poker cards and the human players would guess what kinds of rules the dog tried to convey.
+Most of the time, the human players would take the leading position.
+However, the dog may discover the key information to the puzzle first, and it would try to draw the attention of the human with its sound.
+For instance, in the third puzzle, the human did not know the locations of the mushrooms so they would let the dog lead the way.
+In the last puzzle, some of the dog players would actively pick the poker cards and the human players would guess what kinds of rules the dog managed to convey.
+
+\item \textbf{Expressing through body language}\newline
+Except the dog would express the information with its sound, it may also use certain kinds of body language. 
+For example, in the third puzzle, the human players would guess the location of a mushroom based on the facing direction of the dog since this information was also synchronized in the system. Some of the dog players may use jumping to indicate there is something around its current location or something on the wall with higher position. For example, in the last puzzle, the dog player would use jumping to express that the element with smaller atomic number is in the group aligned with the dog's location.
+
+\item \textbf{Communicating with auxiliary items}\newline
+In the last puzzle, a set of poker cards and a periodic table were provided to help communication. Players would use poker cards to represent a certain number. Two kinds of behaviour were observed. One is the numeric value of a card corresponding to one of the digits of the number and one is the sum of the numeric values of cards representing the number. In addition, the number would be the order of an alphabet in the name or the atomic value of an element, which further represent an alphabet in the name. Other interesting mappings were also discovered like using one of suits of cards to represent the group number of elements and another one to represent the period of elements.
+
+%body language
+%auxiliary items
+\end{enumerate}
+
+\subsection{Design Issues}
+After observing the game-play of sixteen participants and interviewing with them, we have discovered some game issues under the unequal communication mechanic.
+
+\begin{enumerate}
+\item \textbf{Narrowing the information gap}\newline
+Although Information Asymmetry is pretty common in many cooperative games, there is a challenge in our communication mechanic. This challenge would require the human player iteratively ask questions to shape his own understanding of the key information the dog player has. If the human players is not good at this kind of communication or the key information is beyond his understanding, they would feel pretty frustrated. To address this issue, there are two approaches. First one is placing a hint to help the human player shape his own understanding. The other one is enhancing the communication capability of the dog player under the no-direct-voice constrain, such as visualizing where the dog is looking at while it is barking. 
+
+\item \textbf{Avoiding making a puzzle too complex}\newline
+In the second puzzle, some human players have pretty diverse imagination of what the dog see at the opposite side of the room. The information gap would be too large to them. Hence, a hint was provided to the human for addressing this issue.
+
+\item \textbf{Avoiding repetitive tasks for players}\newline
+After doing the quantitative analysis, we found that there is a positive correlation between the enjoyment of the dog and the overall difficulty of the dog in each puzzle. But there is a drop between the enjoyment of the human and the overall difficulty of the human in the last puzzle. A possible reason for this may be that repetitive tasks are needed to solve this puzzle (i.e. asking for the correct alphabet), which lowers down the enjoyment. This can also explain why the second puzzle has the highest enjoyment within the four, where the answer is the shortest (4 steps to solve the puzzle), and requires the least queries.
+
+\end{enumerate}
+
 \section{Conclusion}
+In this paper, we present a game experimenting with the unequal communication mechanic, which few games have explored before. We explored the game design with the information type and conducted a game experiment to evaluate our game and understand players' behaviour and experience. Finally, we identified various communication patterns and addressed some game issues for future reference. We hope to see more future work experimenting with this mechanic.
 
 \bibliographystyle{SIGCHI-Reference-Format}
 \bibliography{sample}
