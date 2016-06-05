@@ -213,46 +213,23 @@ In terms of level design, our goal is to explore the game design with the inform
 \begin{enumerate}
 
 \item \textbf{Symbolic information problem}\newline
-% The first puzzle is inputting the correct code in a keypad on a wall.
-The first puzzle is to guess the password of a door by pressing numbers of a keypad on a wall.
-% The human needs to figure out the permutation of the digits according to the clue on nearby desk and the dog will find out the digits which constitute the code by sniffing the dead scientist and then the keypad.
-The human needs to figure out the digit sequence according to the clue on a nearby desk, and the dog looks for the digits which constitute the code by sniffing the dead scientist and then the keypad. (\autoref{fig:keypad_and_name} {\textbf{(a)} and {\textbf{(b)})
+The first puzzle is to guess the password of a door by pressing numbers of a keypad on a wall. The human needs to figure out the digit sequence according to the clue on a nearby desk, and the dog looks for the digits which constitute the code by sniffing the dead scientist and then the keypad. (\autoref{fig:keypad_and_name} \textbf{(a)} and \textbf{(b)})
 
 \item \textbf{Discrete spatial information problem}\newline
-% The second puzzle is a modified 8-puzzle \cite{8puzzle}, where the picture on it is unseen by the human, while the dog can find the clue and see the picture of the puzzle on the opposite side by passing through a narrow aisle. (\autoref{fig:8puzzle} and \autoref{fig:puzzle2_view})
 There are two parts of the second puzzle.
 The first part is to look for a narrow secret passage way that only fits the size of a dog.
-After the dog passes through the passage, both the human and the dog must communicate from different rooms to solve the second part of the puzzle. (\autoref{fig:puzzle2_all} {\textbf{(c)})
-The second part is a modified 8-puzzle where the side with no picture faces the human and the side with a picture faces the dog, and therefore the dog instructs the human to move the tiles.  (\autoref{fig:puzzle2_all} {\textbf{(a)} and {\textbf{(b)})
-%May need to explain why the human knew the existence of the mushrooms.
+After the dog passes through the passage, both the human and the dog must communicate from different rooms to solve the second part of the puzzle. (\autoref{fig:puzzle2_all} \textbf{(c)})
+The second part is a modified 8-puzzle where the side with no picture faces the human and the side with a picture faces the dog, and therefore the dog instructs the human to move the tiles.  (\autoref{fig:puzzle2_all} \textbf{(a)} and \textbf{(b)})
+
 \item \textbf{Continuous spatial information problem}\newline
-% The third puzzle requires two players to destroy three mushrooms located in the room. These mushrooms are invisible to the human, but not the dog. However, the only way to destroy them is by shooting bullets at them, which can be done only by the human. 
 The third puzzle is a first person shooting game for the human with the objective of mushroom destruction.
-However, there are 3 genetically-modified mushrooms only visible to the dog but invisible to the human. (\autoref{fig:auxiliaryItems_and_mushrooms} {\textbf{(b)} and {\textbf{(c)})
+However, there are 3 genetically-modified mushrooms only visible to the dog but invisible to the human. (\autoref{fig:auxiliaryItems_and_mushrooms} \textbf{(b)} and \textbf{(c)})
 The dog must show the locations of the mushrooms for the human to shoot at in order to complete the puzzle.
 
 \item \textbf{Auxiliary items represented information problem}\newline
-In the last puzzle, players are provided with auxiliary items: a set of poker cards and a periodic table.(\autoref{fig:auxiliaryItems_and_mushrooms} {\textbf{(a)}) A name written in English alphabets can only be discovered by the dog nearby a dead scientist (\autoref{fig:keypad_and_name} {\textbf{(c)}) and is the password for accessing a computer which can only be operated by the human. 
-\end{enumerate}
+In the last puzzle, players are provided with auxiliary items: a set of poker cards and a periodic table.(\autoref{fig:auxiliaryItems_and_mushrooms} \textbf{(a)}) A name written in English alphabets can only be discovered by the dog nearby a dead scientist (\autoref{fig:keypad_and_name} \textbf{(c)}) and is the password for accessing a computer which can only be operated by the human. 
 
-% \begin{figure}[H]
-%     \minipage[t]{0.5\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/8puzzle.png}
-%         \caption{The modified 8-puzzle:  \textbf{(a)} the human's view \textbf{(b)}  the dog's view}
-%         \label{fig:8puzzle}
-%     \endminipage
-%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-%       %(or a blank line to force the minipage onto a new line)
-%     \minipage[t]{0.5\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/puzzle2_view.png}
-%         \caption{the view of second puzzle and the narrow aisle}
-%         \label{fig:puzzle2_view}
-%     \endminipage
-%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-%     %(or a blank line to force the minipage onto a new line)
-% \end{figure}
+\end{enumerate}
 
 \begin{figure}[H]
 \centering
@@ -275,32 +252,13 @@ In the last puzzle, players are provided with auxiliary items: a set of poker ca
 \label{fig:auxiliaryItems_and_mushrooms}
 \end{figure}
 
-% \begin{figure}[H]
-%     \minipage[t]{0.5\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/auxiliary_items.png}
-%         \caption{The auxiliary items: poker cards and periodic table.}
-%         \label{fig:auxiliary_items}
-%     \endminipage
-%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-%       %(or a blank line to force the minipage onto a new line)
-%     \minipage[t]{0.5\linewidth}
-%         \centering
-%         \includegraphics[width=\linewidth]{images/puzzle3_2.png}
-%         \caption{The mushroom: \textbf{(a)}  the dog's view \textbf{(b)} the human's view}
-%         \label{fig:puzzle3}
-%     \endminipage
-%     ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-%     %(or a blank line to force the minipage onto a new line)
-% \end{figure}
-
 \section{Study Design}
-% In order to understand the behaviours and experience of players, 16 participants were recruited (F=5;M=11;Age=20 to 27). Before they started playing, we told them the input and the rules of the game. The characters were randomly assigned and the duration of game-play was around 40 to 50 minutes. After they finished the game-play, we let them do a brief questionnaire about their gaming habits, a 5 points Likert-scale questionnaire to collect their experience, such as difficulty and enjoyment, during the game-play and did a short interviewed with them to understand their strategies, communication protocols and behaviours in some special situations.
 In order to understand user behaviours and the gaming experience of our game design, 16 participants were recruited (F=5;M=11;Age=20 to 27).
 Before they started, operations for both the human and dog player character and the rules of the game were introduced.
 The human and dog characters were randomly assigned and the duration of game-play was around 40 to 50 minutes.
 After the game-play, the participants filled up a brief questionnaire about their gaming habits and a 5-point Likert-scale questionnaire to collect their game-play experience of \getGameName{} such as difficulty and enjoyment. 
 We also conducted a short interview with them to understand their strategies, communication protocols, and behaviours in some certain situations.
+
 \section{Result}
 We received overall positive feedbacks from the participants. The average enjoyment of each puzzles is all rated high (above 3.75 out of 5.0). As for the difficulty aspect, players as human find the last two levels more difficult specifically on communicating with the other player, but the second puzzle holds the most difficult one in terms of overall difficulty. Players as dogs, however, finds communicating most difficult in the second puzzle, and the overall difficulty result shows that the last puzzle are considered the most difficult.
 \begin{figure}[h]
@@ -309,7 +267,7 @@ We received overall positive feedbacks from the participants. The average enjoym
 \includegraphics[width=0.9\linewidth]{images/communication_difficulty.png}
 \includegraphics[width=0.9\linewidth]{images/overall_difficulty.png}
 \end{figure}
-\section{Discussion}
+
 \subsection{Communication Patterns}
 After observing the game-play of sixteen participants and interviewing with them, we identified various communication patterns and outlines them below:
 \begin{enumerate}
@@ -355,6 +313,7 @@ In the last puzzle, a set of poker cards and a periodic table were provided to h
 %auxiliary items
 \end{enumerate}
 
+\section{Discussion}
 \subsection{Design Issues}
 After observing the game-play of sixteen participants and interviewing with them, we have discovered some game issues under the unequal communication mechanic.
 
